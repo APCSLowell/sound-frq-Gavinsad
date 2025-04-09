@@ -37,7 +37,7 @@ if(samples[i]>limit){samples[i]=limit;x++;}
     int count =0;
     for(int i=0;i<samples.length;i++){
 if(samples[i]!=0){a=true;}
-      if(x==true){count++;}
+      if(a==true){count++;}
 
 
     }
