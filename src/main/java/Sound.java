@@ -44,7 +44,7 @@ if(samples[i]!=0){a=true;}
     int hi=samples.length - count;
     int[] newSamples = new int[count];
     int y=0;
-    for(int i=hi,i<samples.length;i++){
+    for(int i=hi;i<samples.length ;i++){
 newSamples[y]=samples[i];
       y++;
 
