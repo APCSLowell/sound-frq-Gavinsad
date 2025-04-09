@@ -2,7 +2,7 @@ import java.util.*;
 public class Sound
 {
   /** the array of values in this sound; guaranteed not to be null */
-  int[] samples;
+  int[] sampless;
 
 
 
@@ -15,19 +15,41 @@ public class Sound
    */
   public int limitAmplitude(int limit)
   {  
-    /* to be implemented in part (a) */
-    return 0;
+    int x=0;
+    for(int i=0;i<samples.length;i++){
+if(samples[i]>limit){samples[i]=limit;x++;}
+    if(samples[i]<0-limit){samples[i]=0-limit;x++;}
+
+    }
+    return x;
   }
 
 
 
   /** Removes all silence from the beginning of this sound.
    *  Silence is represented by a value of 0.
-   *  Precondition: samples contains at least one nonzero value
-   *  Postcondition: the length of samples reflects the removal of starting silence
+   *  Precondition: sampless contains at least one nonzero value
+   *  Postcondition: the length of sampless reflects the removal of starting silence
    */
   public void trimSilenceFromBeginning()
   {
-    /* to be implemented in part (b) */
+  boolean a =false;
+    int count =0;
+    for(int i=0;i<samples.length;i++){
+if(samples[i]!=0;){a=true;}
+      if(x==true){count++;}
+
+
+    }
+    int hi=samples.length - count;
+    int[] newSamples = new int[count];
+    int y=0;
+    for(int i=hi,hi<samples.length;i++){
+newSamples[y]=samples[i];
+      y++;
+
+
+    }
+    samples = newSamples;
   }
 }
