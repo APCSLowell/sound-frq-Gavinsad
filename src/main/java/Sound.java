@@ -36,7 +36,7 @@ if(samples[i]>limit){samples[i]=limit;x++;}
   boolean a =false;
     int count =0;
     for(int i=0;i<samples.length;i++){
-if(samples[i]!=0;){a=true;}
+if(samples[i]!=0){a=true;}
       if(x==true){count++;}
 
 
@@ -44,7 +44,7 @@ if(samples[i]!=0;){a=true;}
     int hi=samples.length - count;
     int[] newSamples = new int[count];
     int y=0;
-    for(int i=hi,hi<samples.length;i++){
+    for(int i=hi,i<samples.length;i++){
 newSamples[y]=samples[i];
       y++;
 
